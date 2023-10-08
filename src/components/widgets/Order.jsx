@@ -4,7 +4,7 @@ import Logo from "../../assets/images/png-ads.png";
 const Order = (props) => {
   return (
     <div className="w-100">
-      <div className="relative flex justify-between items-center w-100 px-5 py-3 bg-slate-200 rounded-lg mx-5 mb-5 lg:h-[20%]">
+      <div className="relative flex justify-between items-center w-100 px-5 py-3 bg-slate-200 rounded-lg mx-5 my-5 lg:h-[20%]">
         <div className="flex items-center gap-2 md:gap-7">
           <img src={Logo} alt="headerLogo" className="w-[50px] lg:w-[80px]" />
           <div className="flex flex-col justify-start">

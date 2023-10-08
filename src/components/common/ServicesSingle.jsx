@@ -16,7 +16,8 @@ const ServicesSingle = (props) => {
             </span>
           </span>
           <span>
-            ₹{props.data.price} <span className="font-thin text-[13px]">Price</span>
+            ₹{props.data.price}{" "}
+            <span className="font-thin text-[13px]">Price</span>
           </span>
         </div>
         <div className="">
@@ -25,9 +26,10 @@ const ServicesSingle = (props) => {
               <box-icon
                 name="check-circle"
                 type="solid"
+                size="17px"
                 color="#26b0ff"
               ></box-icon>
-              <span className="font-thin ms-1 text-sm">{perk}</span>
+              <span className="font-thin ms-1 text-[10px]">{perk}</span>
             </span>
           ))}
         </div>

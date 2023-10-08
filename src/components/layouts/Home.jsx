@@ -1,6 +1,7 @@
 import React from "react";
 import Swal from "sweetalert2";
 import MutableElement from "../MutableElement";
+
 import Hero from "../common/Hero";
 
 const Home = () => {
