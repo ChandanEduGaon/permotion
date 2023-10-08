@@ -17,13 +17,11 @@ const Header = () => {
       {/* Mobile */}
       <div className="w-[100%] h-[100%] bg-white flex items-center justify-between px-5 sm:hidden">
         <div className="branding flex items-center">
-          <img
-            src={headerLogo}
-            alt="headerLogo"
-            className="w-[50px]"
-          />
+          <img src={headerLogo} alt="headerLogo" className="w-[50px]" />
         </div>
-        <div className="links flex items-center">
+        <div
+          className="links flex items-center"
+        >
           <box-icon name="menu"></box-icon>
         </div>
       </div>

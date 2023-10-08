@@ -7,6 +7,7 @@ import "intersection-observer";
 import "boxicons";
 import "bootstrap";
 import './assets/js/custom'
+import "rsuite/dist/rsuite.min.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

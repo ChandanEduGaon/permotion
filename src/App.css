@@ -10,6 +10,9 @@ body {
   width: 100vw;
   background-color: rgb(242, 242, 242);
 }
+::-webkit-scrollbar{
+  width: 0;
+}
 
 .anchor {
   transition: .2s;

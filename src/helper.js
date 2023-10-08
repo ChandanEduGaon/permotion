@@ -3,4 +3,5 @@ const toCamelCase = (str) => {
   return camelCaseString;
 };
 
+
 export default toCamelCase;
