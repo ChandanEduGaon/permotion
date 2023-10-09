@@ -55,7 +55,7 @@ const Header = () => {
               location.pathname === "/custom" ? "text-purple-600 active" : ""
             }`}
           >
-            History
+            Custmizer
           </Link>
           <Link
             to={"/orders"}
