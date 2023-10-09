@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../assets/images/png-ads.png";
+import { InputNumber } from "rsuite";
 
 const ServicesSingle = (props) => {
+  const [views, setViews] = useState(props.data.views);
+  const [price, setPrice] = useState(props.data.price);
   return (
     <div className="w-[100%] flex flex-col justify-between items-center px-5 py-10 mb-5 bg-custom rounded-lg">
       <div className="w-[100%] flex justify-between items-center">
@@ -12,12 +15,20 @@ const ServicesSingle = (props) => {
               <span className="font-bold me-3 text-lg">
                 {props.data.service ? props.data.service : "Service"}
               </span>
-              {props.data.views}
+              <div className="w-[50%] my-2">
+                <InputNumber
+                  step={100}
+                  value={views > 0 ? views : 0}
+                  onChange={(value) => {
+                    setViews(value);
+                    setPrice(views > 0 ? 0.75 * value : 0);
+                  }}
+                />
+              </div>
             </span>
           </span>
           <span>
-            ₹{props.data.price}{" "}
-            <span className="font-thin text-[13px]">Price</span>
+            ₹{price} <span className="font-thin text-[13px]">Price</span>
           </span>
         </div>
         <div className="">
@@ -29,7 +40,9 @@ const ServicesSingle = (props) => {
                 size="17px"
                 color="#26b0ff"
               ></box-icon>
-              <span className="font-thin ms-1 text-[10px]">{perk}</span>
+              <span className="font-thin ms-1 text-[10px] md:text-[15px]">
+                {perk}
+              </span>
             </span>
           ))}
         </div>

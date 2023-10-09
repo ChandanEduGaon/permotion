@@ -19,9 +19,7 @@ const Header = () => {
         <div className="branding flex items-center">
           <img src={headerLogo} alt="headerLogo" className="w-[50px]" />
         </div>
-        <div
-          className="links flex items-center"
-        >
+        <div className="links flex items-center">
           <box-icon name="menu"></box-icon>
         </div>
       </div>
@@ -52,9 +50,9 @@ const Header = () => {
             Services
           </Link>
           <Link
-            to={"/history"}
+            to={"/custom"}
             className={`anchor ${
-              location.pathname === "/history" ? "text-purple-600 active" : ""
+              location.pathname === "/custom" ? "text-purple-600 active" : ""
             }`}
           >
             History

@@ -1,5 +1,7 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
+import { Badge } from "rsuite";
+
 
 const Footer = () => {
   const location = useLocation();
@@ -30,7 +32,7 @@ const Footer = () => {
           </span>
         </Link>
         <Link to={"/services"}>
-          <span className="flex flex-col justify-center items-center">
+          <span className="flex flex-col justify-center items-center relative">
             <box-icon
               type="solid"
               name="bolt-circle"
@@ -39,18 +41,24 @@ const Footer = () => {
               }`}
             ></box-icon>
             <span className={`sm-link font-thin text-sm`}>Services</span>
+            <span
+              className={`absolute -top-2 right-2 ${
+                location.pathname === "/services" ? "hidden" : "block"
+              }`}
+            >
+              <Badge color="green" />
+            </span>
           </span>
         </Link>
-        <Link to={"/history"}>
+        <Link to={"/custom"}>
           <span className="flex flex-col justify-center items-center">
             <box-icon
-              type="solid"
-              name="time"
+              name="slider-alt"
               color={`#${
-                location.pathname === "/history" ? "9333ea" : "78716c"
+                location.pathname === "/custom" ? "9333ea" : "78716c"
               }`}
             ></box-icon>
-            <span className={`sm-link font-thin text-sm`}>History</span>
+            <span className={`sm-link font-thin text-sm`}>Custom</span>
           </span>
         </Link>
         <Link to={"/profile"}>

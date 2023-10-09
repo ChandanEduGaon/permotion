@@ -15,7 +15,7 @@ const Offer = (props) => {
     return `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
   };
   return (
-    <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-[80%] p-5 mb-5 rounded-lg text-white flex justify-between relative">
+    <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-[80%] md:w-[30%] p-5 mb-5 rounded-lg text-white flex justify-between relative">
       <div className="w-[70%]">
         <div>
           <h1 className="text-lg">{props.data.title}</h1>
@@ -30,10 +30,14 @@ const Offer = (props) => {
         </div>
       </div>
       <div className="w-[30%] flex justify-center items-center">
-        <img src={props.data.src} alt="yt" className="w-[80%] rounded-lg" />
+        <img
+          src={props.data.src}
+          alt="yt"
+          className="max-w-[80%] min-w-[80%] rounded-lg"
+        />
       </div>
       <span className="absolute bottom-3 right-4">
-        End in - {minutesToHMS(100)}s
+        End in - {minutesToHMS(props.data.duration)}s
       </span>
     </div>
   );

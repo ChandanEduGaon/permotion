@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/layouts/Home";
 import Services from "./components/layouts/Services";
 import About from "./components/layouts/About";
-import History from "./components/layouts/History";
 import Orders from "./components/layouts/Orders";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import Profile from "./components/layouts/Profile";
+import Custom from "./components/layouts/Custom";
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/orders" element={<Orders />} />
-            <Route exact path="/history" element={<History />} />
+            <Route exact path="/custom" element={<Custom />} />
             <Route exact path="/profile" element={<Profile />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/services" element={<Services />} />
