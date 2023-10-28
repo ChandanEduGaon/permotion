@@ -15,7 +15,7 @@ const DiscoveryViewsComponent = (props) => {
             <p className="text-sm text-gray-600">{`@ Just ${item.price} Only`}</p>
             <p className="text-sm text-white">{item.quality}</p>
             <a
-              href={`https://wa.me/6209776682?text=Hello Sir, I am intrested with this service, ${item.views}`}
+              href={`https://wa.me/+916209776682?text=Hello Sir, I am intrested with this service, ${item.views}`}
               target="_blank"
               className="absolute bottom-5 right-5"
             >
