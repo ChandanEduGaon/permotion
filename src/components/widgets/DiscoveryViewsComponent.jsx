@@ -3,7 +3,7 @@ import React from "react";
 const DiscoveryViewsComponent = (props) => {
   return (
     <div className="w-full rounded-md p-6">
-      <h1 className="text-2xl font-bold -mb-2 tracking-tighter">
+      <h1 className="text-2xl font-bold -mb-2">
         {props.title}
       </h1>
       <span className="text-gray-400 text-[10px]">{props.service}</span>
