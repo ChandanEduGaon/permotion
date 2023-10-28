@@ -37,7 +37,8 @@ const Offer = (props) => {
         />
       </div>
       <span className="absolute bottom-3 right-4">
-        End in - {minutesToHMS(props.data.duration)}s
+        {/* End in - {minutesToHMS(props.data.duration)}s */}
+        Expired
       </span>
     </div>
   );

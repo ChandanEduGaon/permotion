@@ -19,11 +19,11 @@ const Custom = () => {
         <span className="text-4xl font-thin">/-</span>
       </span>
       <div>
-        <div class="relative my-5 rounded-md shadow-sm border bottom-1 p-3">
+        <div className="relative my-5 rounded-md shadow-sm border bottom-1 p-3">
           <select
             id="category"
             name="category"
-            class="w-full h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-2 text-gray-500  sm:text-sm outline-none"
+            className="w-full h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-2 text-gray-500  sm:text-sm outline-none"
             onChange={(e) => {
               setAmount(0);
               setTotal(0);
@@ -38,7 +38,7 @@ const Custom = () => {
             <option value={"Spotify"}>Spotify</option>
           </select>
         </div>
-        <div class="relative mt-2 rounded-md shadow-sm border bottom-1 p-2">
+        <div className="relative mt-2 rounded-md shadow-sm border bottom-1 p-2">
           <input
             type="number"
             name="quantity"
@@ -48,11 +48,11 @@ const Custom = () => {
             disabled
             value={amount}
           />
-          <div class="absolute inset-y-0 right-2 flex items-center">
+          <div className="absolute inset-y-0 right-2 flex items-center">
             <select
               id="category"
               name="category"
-              class="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-2 text-gray-500  sm:text-sm outline-none"
+              className="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-2 text-gray-500  sm:text-sm outline-none"
               onChange={(e) => {
                 setAmount(0);
                 setTotal(0);
@@ -68,11 +68,11 @@ const Custom = () => {
           </div>
         </div>
       </div>
-      <div class="relative my-5 rounded-md shadow-sm border bottom-1 p-3">
+      <div className="relative my-5 rounded-md shadow-sm border bottom-1 p-3">
         <select
           id="category"
           name="category"
-          class="w-full h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-2 text-gray-500  sm:text-sm outline-none"
+          className="w-full h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-2 text-gray-500  sm:text-sm outline-none"
           onChange={(e) => {
             setIncrement(parseInt(e.currentTarget.value));
           }}

@@ -13,27 +13,27 @@ const Home = () => {
     {
       title: "Youtube Views",
       src: "https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg",
-      p_price: "300",
-      c_price: "120",
+      p_price: "30000",
+      c_price: "1200",
       quantity: "100K",
       duration: "1000",
     },
-    {
-      title: "Instagram Followers",
-      src: "https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg",
-      p_price: "500",
-      c_price: "230",
-      quantity: "1K",
-      duration: "600",
-    },
-    {
-      title: "Facebook Likes",
-      src: "https://images.hindustantimes.com/tech/img/2023/09/21/1600x900/fb_1695273515215_1695273522698.jpg",
-      p_price: "1990",
-      c_price: "1690",
-      quantity: "10K",
-      duration: "100",
-    },
+    // {
+    //   title: "Instagram Followers",
+    //   src: "https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg",
+    //   p_price: "500",
+    //   c_price: "230",
+    //   quantity: "1K",
+    //   duration: "600",
+    // },
+    // {
+    //   title: "Facebook Likes",
+    //   src: "https://images.hindustantimes.com/tech/img/2023/09/21/1600x900/fb_1695273515215_1695273522698.jpg",
+    //   p_price: "1990",
+    //   c_price: "1690",
+    //   quantity: "10K",
+    //   duration: "100",
+    // },
   ];
   return (
     <div className="w-[100%] h-[100%]">

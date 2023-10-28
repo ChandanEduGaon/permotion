@@ -22,14 +22,14 @@ const Hero = () => {
     },
   };
   return (
-    <div className="hero w-100 sm:h-[45%] md:h-[60%] h-[30%] relative overflow-hidden bg-purple-600">
+    <div className="hero w-100 sm:h-[45%] md:h-[60%] h-[35%] relative overflow-hidden bg-purple-600">
       <div className="w-[100%] h-[100%] absolute sm:flex justify-center items-center flex flex-col">
         <div className="w-[100%] p-3 flex justify-center items-center">
           <img
             src={heroLogo}
             alt="logo"
             style={animationStyles.animBottom}
-            className="w-[30%] md:w-[30%] lg:w-[20%]"
+            className="w-[30%] md:w-[30%] lg:w-[10%]"
           />
         </div>
         <div className="w-[100%] flex items-center flex-col sm:p-10">
