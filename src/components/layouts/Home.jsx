@@ -1,40 +1,28 @@
-import React from "react";
-import Swal from "sweetalert2";
-import MutableElement from "../MutableElement";
-
+import { useState, useEffect } from "react";
 import Hero from "../common/Hero";
 import Offer from "../widgets/Offer";
-import Slider from "../widgets/Slider";
 import { Divider } from "rsuite";
 import LeftDrawer from "../widgets/LeftDrawer";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase";
+
 
 const Home = () => {
-  const offers = [
-    {
-      title: "Youtube Views",
-      src: "https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg",
-      p_price: "30000",
-      c_price: "1200",
-      quantity: "100K",
-      duration: "1000",
-    },
-    // {
-    //   title: "Instagram Followers",
-    //   src: "https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg",
-    //   p_price: "500",
-    //   c_price: "230",
-    //   quantity: "1K",
-    //   duration: "600",
-    // },
-    // {
-    //   title: "Facebook Likes",
-    //   src: "https://images.hindustantimes.com/tech/img/2023/09/21/1600x900/fb_1695273515215_1695273522698.jpg",
-    //   p_price: "1990",
-    //   c_price: "1690",
-    //   quantity: "10K",
-    //   duration: "100",
-    // },
-  ];
+  const [offers, setOffers] = useState([]);
+
+  const fetchPost = async () => {
+    await getDocs(collection(db, "offers")).then((querySnapshot) => {
+      const newData = querySnapshot.docs.map((doc) => ({
+        ...doc.data(),
+        id: doc.id,
+      }));
+      setOffers(newData);
+    });
+  };
+
+  useEffect(() => {
+    fetchPost();
+  }, []);
   return (
     <div className="w-[100%] h-[100%]">
       <Hero />

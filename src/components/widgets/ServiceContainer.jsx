@@ -262,48 +262,6 @@ const ServiceContainer = () => {
           title={"Single State Indian Discovery Views"}
         />
       </div>
-      <h1 className="p-6 text-2xl bg-gray-500 text-white">YouTube Services Price List🔥</h1>
-      <div className="w-100 flex flex-col items-start sm:justify-center md:justify-start md:flex-row md:flex-wrap">
-        <DiscoveryViewsComponent
-          data={WorldSkipViews}
-          service={"👉🏻🌎Worlwide Google Ads Skip Views🌎"}
-          title={"World Skip Views"}
-        />
-        <DiscoveryViewsComponent
-          data={IndSkipViews}
-          service={"👉🏻🇮🇳Google Ads Indian Skip Views Price List🇮🇳"}
-          title={"Indian Skip Views"}
-        />
-      </div>
-      <h1 className="p-6 text-2xl bg-gray-500 text-white">Instagram Services Price List🔥</h1>
-      <div className="w-100 flex flex-col items-start md:justify-start md:flex-row md:flex-wrap">
-        <DiscoveryViewsComponent
-          data={WorldSkipViews}
-          service={"👉🏻🌎Worlwide Google Ads Skip Views🌎"}
-          title={"World Skip Views"}
-        />
-      </div>
-      <h1 className="p-6 text-2xl bg-gray-500 text-white">Facebook Services Price List🔥</h1>
-      <div className="w-100 flex flex-col items-start sm:justify-center md:justify-start md:flex-row md:flex-wrap">
-        <DiscoveryViewsComponent
-          data={WorldSkipViews}
-          service={"👉🏻🌎Worlwide Google Ads Skip Views🌎"}
-          title={"World Skip Views"}
-        />
-        <DiscoveryViewsComponent
-          data={IndSkipViews}
-          service={"👉🏻🇮🇳Google Ads Indian Skip Views Price List🇮🇳"}
-          title={"Indian Skip Views"}
-        />
-      </div>
-      <h1 className="p-6 text-2xl bg-gray-500 text-white">Spotify Services Price List🔥</h1>
-      <div className="w-100 flex flex-col items-start sm:justify-center md:justify-start md:flex-row md:flex-wrap">
-        <DiscoveryViewsComponent
-          data={WorldSkipViews}
-          service={"👉🏻🌎Worlwide Google Ads Skip Views🌎"}
-          title={"World Skip Views"}
-        />
-      </div>
     </>
   );
 };
